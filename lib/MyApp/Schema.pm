@@ -1,0 +1,1 @@
+# Create your database schema module. In the lib/MyApp/Schema.pm file, you can define your database schema using the DBIx::Class framework. This module describes the tables, relationships, and other database structures. You may need to create this file if it doesn't exist. Refer to the DBIx::Class documentation for more information on defining the schema.
