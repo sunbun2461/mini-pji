@@ -41,15 +41,6 @@ __PACKAGE__->config(
     disable_component_resolution_regex_fallback => 1,
     enable_catalyst_header => 1, # Send X-Catalyst header
     encoding => 'UTF-8', # Setup request decoding and response encoding
-
-    # Template Toolkit configuration
-    'View::TT' => {
-        INCLUDE_PATH => [
-            __PACKAGE__->path_to('root', 'src'),
-        ],
-        TEMPLATE_EXTENSION => '.tt',
-        WRAPPER => 'wrapper.tt',
-    },
 );
 
 # Start the application
@@ -85,11 +76,3 @@ it under the same terms as Perl itself.
 =cut
 
 1;
-
-
-__PACKAGE__->config(
-    'View::TT' => {
-        TEMPLATE_EXTENSION => '.tt',
-        # Additional configuration options
-    },
-);

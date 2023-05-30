@@ -4,26 +4,6 @@ use namespace::autoclean;
 
 BEGIN { extends 'Catalyst::Controller' }
 
-
-
-
-#begin new code not sure if it goes here
-
-sub myaction :Path('/myaction') {
-    my ($self, $c) = @_;
-
-    # Access the database connection
-    my $db = $c->model('DB')->schema;
-
-    # Perform database operations using $db
-
-    # ...
-} 
-
-#end new code not sure if it goes here
-
-
-
 #
 # Sets the actions in this controller to be registered with no prefix
 # so they function identically to actions created in MyApp.pm
