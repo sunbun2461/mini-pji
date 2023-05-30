@@ -27,7 +27,14 @@ sub index :Path :Args(0) {
     $c->response->body('Matched MyApp::Controller::Example in Example.');
 }
 
+=head2 hello
 
+=cut
+
+sub hello :Path('/example/hello') {
+    my ($self, $c) = @_;
+    $c->response->body('Hello, Catalyst!');
+}
 
 =encoding utf8
 
