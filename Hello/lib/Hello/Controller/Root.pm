@@ -1,4 +1,4 @@
-package MyApp::Controller::Root;
+package Hello::Controller::Root;
 use Moose;
 use namespace::autoclean;
 
@@ -14,7 +14,7 @@ __PACKAGE__->config(namespace => '');
 
 =head1 NAME
 
-MyApp::Controller::Root - Root Controller for MyApp
+Hello::Controller::Root - Root Controller for Hello
 
 =head1 DESCRIPTION
 
@@ -30,9 +30,15 @@ The root page (/)
 
 sub index :Path :Args(0) {
     my ( $self, $c ) = @_;
-    die 'oops';
+
     # Hello World
     $c->response->body( $c->welcome_message );
+}
+
+sub hello :Global {
+    my ( $self, $c ) = @_;
+ 
+    $c->stash(template => 'hello.tt2');
 }
 
 =head2 default

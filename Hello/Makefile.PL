@@ -7,8 +7,8 @@ use Module::Install::Catalyst; # Complain loudly if you don't have
                                # Catalyst::Devel installed or haven't said
                                # 'make dist' to create a standalone tarball.
 
-name 'MyApp';
-all_from 'lib/MyApp.pm';
+name 'Hello';
+all_from 'lib/Hello.pm';
 
 requires 'Catalyst::Runtime' => '5.90130';
 requires 'Catalyst::Plugin::ConfigLoader';
@@ -18,8 +18,6 @@ requires 'Moose';
 requires 'namespace::autoclean';
 requires 'Config::General'; # This should reflect the config file format you've chosen
                  # See Catalyst::Plugin::ConfigLoader for supported formats
-requires 'Catalyst::Plugin::StackTrace';
-                 
 test_requires 'Test::More' => '0.88';
 catalyst;
 
