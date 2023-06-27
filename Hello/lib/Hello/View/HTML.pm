@@ -8,6 +8,7 @@ __PACKAGE__->config(
     # Change default TT extension
     TEMPLATE_EXTENSION => '.tt2',
     # Set the location for TT files
+    render_die => 1,
     INCLUDE_PATH => [
             Hello->path_to( 'root', 'src' ),
         ],
