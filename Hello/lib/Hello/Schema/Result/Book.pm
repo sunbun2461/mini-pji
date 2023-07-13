@@ -37,7 +37,7 @@ __PACKAGE__->load_components("InflateColumn::DateTime");
 __PACKAGE__->table("book");
 
 =head1 ACCESSORS
-
+git 
 =head2 id
 
   data_type: 'integer'
